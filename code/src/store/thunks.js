@@ -4,7 +4,7 @@ import { setRoom } from './room';
 export const callAPI = (endpoint, message) => {
   return (dispatch) => {
     dispatch(setState('Loading'));
-    fetch(`https://wk16-backend.herokuapp.com/${endpoint}`, {
+    fetch(`https://labyrinth.technigo.io/${endpoint}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -18,3 +18,4 @@ export const callAPI = (endpoint, message) => {
       });
   };
 };
+
